@@ -1,0 +1,5 @@
+date,partner,amount,_lineage
+2025-01-05,Cliente A,1234.56,ventas_mes.csv
+2025-01-15,Cliente B,234.5,ventas_mes.csv
+2025-01-22,Cliente C,99.99,ventas_mes.csv
+2025-02-01,Cliente A,1000.0,ventas_mes.csv
