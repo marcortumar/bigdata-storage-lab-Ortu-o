@@ -1,20 +1,21 @@
-python
+# src/ingest.py
 import pandas as pd
-import os
-from pathlib import Path
+from typing import List
 
-class DataIngestor:
-    def __init__(self, raw_data_path="data/raw"):
-        self.raw_data_path = Path(raw_data_path)
-        
-    def load_csv_files(self):
-        """Carga todos los archivos CSV del directorio raw"""
-        pass
-        
-    def detect_schema(self, df):
-        """Detecta y documenta el esquema de un DataFrame"""
-        pass
-        
-    def create_bronze_layer(self):
-        """Crea la capa bronze con datos crudos"""
-        pass
+def tag_lineage(df: pd.DataFrame, source_name: str) -> pd.DataFrame:
+    """
+    Añade una columna _lineage con el nombre del archivo origen.
+    """
+    df = df.copy()
+    df["_lineage"] = source_name
+    return df
+
+
+def concat_bronze(frames: List[pd.DataFrame]) -> pd.DataFrame:
+    """
+    Une múltiples DataFrames bronze en uno solo.
+    """
+    if not frames:
+        return pd.DataFrame()
+    return pd.concat(frames, ignore_index=True)
+
