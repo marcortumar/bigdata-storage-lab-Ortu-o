@@ -1,13 +1,19 @@
-# ✅ Checklist de entrega
+- [ ] *URL de la app Streamlit funcional*
+  - Pegar aquí: "https://bigdata-storage-lab-ortu-o-rrch5dgakgkamuzdexjmxy.streamlit.app"
+  - La app carga, permite subir CSV y muestra bronze, silver, KPIs y descargas.
 
-- [ https://bigdata-storage-lab-ortu-o-rrch5dgakgkamuzdexjmxy.streamlit.app] URL de la aplicación **Streamlit** funcional y accesible.
-- [ data/bronze](data/silver) Archivos `bronze.csv` y `silver.csv` generados y subidos en la carpeta `/data`.
-- [ ] Archivo `README.md` con:
-  - [ ] Justificación de decisiones de diseño (en base a las **5V del Big Data**).
-  - [ ] Explicación de elecciones técnicas (formatos, normalización, etc.).
-- [ ] Carpeta `docs/` con capturas de pantalla de la aplicación en funcionamiento.
-- [ ] Diccionario de datos completo (columnas canónicas, tipos, significado).
-- [ ] Documento de gobernanza (reglas de validación, linaje, responsables, etc.).
+- [ ] *bronze.csv y silver.csv subidos a /data*
+  - data/bronze.csv presentes.
+  - data/silver.csv presentes.
+  - Archivos versionados con nombres auditables.
+
+- [ ] *README con decisiones justificadas (5V → elecciones) y capturas en docs/*
+  - Justificación clara por Volumen, Velocidad, Variedad, Veracidad, Valor.
+  - Capturas de la app y de tablas bronze/silver en docs/.
+
+- [ ] *Diccionario y gobernanza completos*
+  - docs/diccionario.md actualizado con esquema canónico y mapeos.
+  - docs/gobernanza.md con linaje, validaciones, mínimos privilegios, trazabilidad y roles.
 
 
 # 📊 Rúbrica de evaluación
