@@ -1,7 +1,7 @@
 # ✅ Checklist de entrega
 
 - [ https://bigdata-storage-lab-ortu-o-rrch5dgakgkamuzdexjmxy.streamlit.app] URL de la aplicación **Streamlit** funcional y accesible.
-- [ ] Archivos `bronze.csv` y `silver.csv` generados y subidos en la carpeta `/data`.
+- [ data/bronze](data/silver) Archivos `bronze.csv` y `silver.csv` generados y subidos en la carpeta `/data`.
 - [ ] Archivo `README.md` con:
   - [ ] Justificación de decisiones de diseño (en base a las **5V del Big Data**).
   - [ ] Explicación de elecciones técnicas (formatos, normalización, etc.).
